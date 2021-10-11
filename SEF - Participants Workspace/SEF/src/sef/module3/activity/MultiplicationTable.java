@@ -4,7 +4,7 @@
 package sef.module3.activity;
 
 /**
- * @author 
+ * @Julija Melnika
  *
  */
 public class MultiplicationTable {
@@ -27,9 +27,9 @@ public class MultiplicationTable {
 
 		// Table from 11 to 20
 		
-		// complete code. write for loop for int i
+		for (int i = 11; i<=20; i++){
 			System.out.println("*** Table of "+i + " ***");
-			// complete code. write nested for loop for int j
+			for (int j = 11; j<=20; j++) {
 				System.out.println(i + "X" + j +" = " + i*j);
 		}
 		}

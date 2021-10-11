@@ -4,7 +4,7 @@
 package sef.module3.activity;
 
 /**
- * @author 
+ * @Julija Melnika
  *
  */
 public class NumToWords {
@@ -16,7 +16,7 @@ public class NumToWords {
 		
 		
 				
-		int i = 8;
+		int i = 3;
 		String numText = "";
 
 		switch(i) {
@@ -31,7 +31,16 @@ public class NumToWords {
 			numText = "FOUR";break;
 		case 5:
 			numText = "FIVE";break;
-		// complete the code.
+		case 6:
+			numText = "SIX"; break;
+		case 7:
+			numText = "SEVEN"; break;
+		case 8:
+			numText = "EIGHT"; break;
+		case 9:
+			numText = "NINE"; break;
+		case 10:
+			numText = "TEN"; break;
 		default:
 			numText = "NUMBER " + i;
 		}
