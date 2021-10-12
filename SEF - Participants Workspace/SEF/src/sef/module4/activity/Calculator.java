@@ -63,7 +63,7 @@ public class Calculator {
 	// Divide
 	public int divide(int x, int y) {
 		int divValue = 0;
-		if (x == 0 || y == 0) {
+		if (y == 0) {
 			divValue = 0;
 		} else {
 			divValue = x / y;
