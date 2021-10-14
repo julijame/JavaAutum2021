@@ -6,6 +6,13 @@ public class ArrayExceptionSample {
 		
 		//The valid indices for this array are from 0 to 4
 		int scores[] = new int[5];
+		try {
+			for (int i = 0; i <= 5; i++) {
+				System.out.println(i + " element of the array is " + scores[i]);
+			}
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Don't have so many elements in the array");
+		}
 		
 		//But the the loop below will run from 0 to 5.
 		//Last index is 4 so accessing scores[5] will cause an exception

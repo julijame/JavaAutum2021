@@ -2,16 +2,19 @@ package sef.module17.sample;
 // Complete Code
 import junit.framework.TestCase;
 
+//extending existing class to TestCase. Class name should be previous + Test
 public class MyCalculatorTest extends TestCase {
 
 	private MyCalculator theCalculator;
 
+	//setup of the environment
 	protected void setUp() throws Exception {
 		super.setUp();
 		//	Initialize variables to be used here
 		theCalculator = new MyCalculator();
 	}
 
+	//tearDown method, will happen at the end of test execution
 	protected void tearDown() throws Exception {
 		super.tearDown();
 	}
@@ -26,12 +29,12 @@ public class MyCalculatorTest extends TestCase {
 
 		a = -5;		
 		b = 10;		
-		//	Checks the sum of a postive value and a negative value
+		//	Checks the sum of a positive value and a negative value
 		assertEquals(5, (theCalculator.getSum(a,b)));
 		assertEquals(5, (theCalculator.getSum(b,a)));
 		
 		a = -5;		
-		b = -10;		
+		b = -10;
 		//	Checks the sum of two (2) negative values
 		assertEquals(-15, (theCalculator.getSum(a,b)));
 		assertEquals(-15, (theCalculator.getSum(b,a)));
@@ -110,7 +113,7 @@ public class MyCalculatorTest extends TestCase {
 				theCalculator.getSum(2, 1);
 				theCalculator.getDifference(3, 3);
 				theCalculator.getProduct(0, 1);
-				theCalculator.getQuotient(1, 0);
+				theCalculator.getQuotient(1, 3);
 				new MyCalculator();
 					
 			} catch (Exception e) {

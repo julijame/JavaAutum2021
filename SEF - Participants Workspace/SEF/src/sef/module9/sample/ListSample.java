@@ -8,7 +8,7 @@ public class ListSample {
 	public static void main(String[] args) {
 
 		//Create an ArrayList
-	    List list = new ArrayList();
+	    List list = new ArrayList(); // can also be LinkedList, VectorList, StackedList. But ArrayList is the most popular
 	    // List implemented as growable array
 	    
 	    // Add an element to the list
@@ -35,7 +35,9 @@ public class ListSample {
 
 	    
 	    //1 - Add 3 more elements to the list - A, B and C
-	    
+	    list.add("A");
+	    list.add("B");
+	    list.add("C");
 	    
 	    
 		//call a method which prints this list
@@ -49,5 +51,23 @@ public class ListSample {
 		//individual elements of a Collection
 		
 		//2 - Use Iterator to iterate over this list.
-			}
+		Iterator<String> it = l.iterator();
+		while (it.hasNext()) {
+			System.out.println(it.next());
+		}
+		// or we can use this variant of the loop
+		System.out.println("---var2");
+		for (Object o:l) {
+			System.out.println(o.toString());
+		}
+
+		// or we can use this variant of the loop
+		System.out.println("--- var3");
+		for (String s : (Iterable<String>) l) System.out.println(s + ", ");
+
+		// or like this
+		System.out.println(("---var4"));
+		for (Object s: l) System.out.println((s + ", "));
+
+	}
 }
